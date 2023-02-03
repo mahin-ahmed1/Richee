@@ -26,28 +26,28 @@ var mixer = mixitup('.portfolio-list');
 
 
 //STICKY NAV WITH SCROLLING EFFECTS
- // $(window).on('scroll',function(){
+ $(window).on('scroll',function(){
 
- //  if($(window).scrollTop()>=150 && !$('.header-area').hasClass('sticky')){
- //   $('.header-area').addClass('sticky');
- //   $('.sticky').slideDown();
- //  }
+  if($(window).scrollTop()>=150 && !$('.header-area').hasClass('sticky')){
+   $('.header-area').addClass('sticky');
+   $('.sticky').slideDown();
+  }
 
 
- //  else if($(window).scrollTop()<=80){
+  else if($(window).scrollTop()<=80){
     
- //   $(".header-area").css("display","");
- //   if($('.header-area').hasClass('sticky')){
- //    $('.header-area').removeClass("sticky");
- //   }
- //  }
+   $(".header-area").css("display","");
+   if($('.header-area').hasClass('sticky')){
+    $('.header-area').removeClass("sticky");
+   }
+  }
 
- //  else if($(window).scrollTop()<150 && $('.header-area').hasClass('sticky')){
+  else if($(window).scrollTop()<150 && $('.header-area').hasClass('sticky')){
   
- //   $('.header-area').removeClass("sticky");
- //  }
+   $('.header-area').removeClass("sticky");
+  }
 
- // });
+ });
 
 //TOGGLE MENU SETTINGS
 
